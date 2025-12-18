@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>userCreateAccount</title>
+        <link rel="stylesheet" href="../css/userStyle.css">
+        <script type="text/javascript" src="java/createAccount.js" async></script>
+    </head>
+    <body>
+        <h1>Votre Page Utilisateur</h1>
+        <br>
+        <hr class="hrClassic">
+        <h2>CREER VOUS UN COMPTE GRATUITEMENT</h2>
+        <hr class="hrClassic">
+        <br>
+        <center><table class="table">
+            <tr>
+                <td><button id="connectButton">se connecter</button></td>
+                <td><button>creer un compte</button></td>
+            </tr>
+        </table></center>
+        <form action="userConnect.html" method="get">
+            <center><table class="formulaire">
+                <tr>
+                    <th>Nom et prenom</th>
+                    <td>
+                        <input type="text" placeholder="prenom" name="firstName"><input type="text" placeholder="Nom" name="name"><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Age</th>
+                    <td>
+                        <input id="idRange" type="range" max="99" min="12" name="age"><hr>
+                    </td>
+                    <td>
+                        <div id="ageText"><p>44</p></div>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Mail</th>
+                    <td>
+                        <input type="text" value="@gmail.com" name="mail" required><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Genre</th>
+                    <td><select name="genre">
+                        <option value="homme">HOMME</option>
+                        <option value="femme">FEMME</option>
+                        <option value="autre">AUTRE</option>
+                        <option value="je ne veux pas dire">JE VEUX PAS DIRE</option>
+                        <option value="PATATE">POMME DE TERRE</option>
+                    </select><hr></td>
+                </tr>
+                <tr>
+                    <th>Pseudo</th>
+                    <td>
+                        <input type="text" name="pseudo" placeholder="pseudo44" required><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Mot de passe</th>
+                    <td>
+                        <input type="password" name="password" minlength="8" placeholder="8 caracters min" required><hr>
+                    </td>
+                </tr>
+            </table></center>
+            <br>
+            <input id="Valider" type="submit" class="button" value="Valider">
+			<input type="reset" class="button" value="Effacer le formulaire">
+        </form>
+    </body>
+</html>

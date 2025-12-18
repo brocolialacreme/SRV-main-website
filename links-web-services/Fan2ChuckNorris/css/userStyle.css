@@ -1,0 +1,135 @@
+form{
+    background-color: rgba(187, 114, 65, 0.644);
+    margin: 25%;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+
+    border-color: rgb(70, 46, 36);
+    border-style: solid;
+    border-width: 5px;
+    border-radius: 10px;
+}
+
+.table{
+    background-color: rgba(163, 82, 50, 0.658);
+    text-align: center;
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.formulaire{
+    padding: 2%;
+}
+
+h1{
+    background-color: rgb(185, 141, 104);
+    text-align: right;
+    border-radius: 15px;
+    margin: 5%;
+    margin-top: 20;
+    margin-bottom: 20;
+    border-style: solid;
+    border-width: 5px;
+    border-color: rgb(70, 46, 36);
+    padding-right: 30px;
+    color: rgb(70, 46, 36);
+}
+
+h1:hover{
+    background-color: rgb(223, 176, 138);
+}
+
+h2{
+    text-align: center;
+    color: rgb(70, 46, 36);
+}
+
+.hrClassic{
+    background-color: rgb(70, 46, 36);
+    border-color: rgb(70, 46, 36);
+    width: 50%;
+    height: 2px;
+}
+
+hr{
+    border-color: rgb(70, 46, 36);
+}
+
+body{
+    background-color: rgb(186, 186, 186);
+}
+
+th{
+    padding-right: 20px;
+}
+
+.range{
+    accent-color: rgb(70, 46, 36);
+}
+
+input{
+    border-radius: 5px;
+    padding: 0.5%;
+    border-color: rgba(255, 255, 255, 0);
+    margin-bottom: 4px;
+}
+
+button{
+    border-radius: 5px;
+    border-color: rgba(255, 255, 255, 0);
+    margin: 3px;
+}
+
+button:hover{
+    background-color: rgb(177, 177, 177);
+}
+.button:hover{
+    background-color: rgb(177, 177, 177);
+}
+
+#backButton{
+    background-color: rgb(255, 255, 255);
+    padding: 5px;
+}
+
+#backButton:hover{
+    background-color: rgb(123, 107, 89);
+    padding: 5px;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    grid-template-rows: 320px 300px;
+    gap: 5%;
+    width: 60%;
+} 
+
+.littleBox {
+    background-color : rgba(187, 114, 65, 0.644);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+
+    border-color: rgb(70, 46, 36);
+    border-style: solid;
+    border-width: 5px;
+}
+
+.bigBox {
+    grid-column: 1 / span 2;
+    border-radius: 10px;
+    background-color : rgba(187, 114, 65, 0.644);
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.2);
+
+    border-color: rgb(70, 46, 36);
+    border-style: solid;
+    border-width: 5px;
+}
+
+img{
+    height: auto;
+    border-radius: 10px;
+}

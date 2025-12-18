@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <title>userConnect</title>
+        <link rel="stylesheet" href="../css/userStyle.css">
+        <script type="text/javascript" src="java/connect.js" async></script>
+    </head>
+    <body>
+        <h1>Votre Page Utilisateur</h1>
+        <br>
+        <hr class="hrClassic">
+        <h2>CONNECTER VOUS</h2>
+        <hr class="hrClassic">
+        <br>
+        <center><table class="table">
+            <tr>
+                <td><button>se connecter</button></td>
+                <td><a href="userCreateAccount.html"><button>creer un compte</button></a></td>
+            </tr>
+        </table></center>
+        <form method="get">
+            <center><table class="formulaire">
+                <tr>
+                    <th>Nom Utilisateur</th>
+                    <td>
+                        <input type="text" id="pseudoID" placeholder="pseudo44" name="userName"><hr>
+                    </td>
+                </tr>
+                <tr>
+                    <th>Mot De Passe</th>
+                    <td>
+                        <input type="password" id="passwordID" placeholder="password" name="userPassword">
+                    </td>
+                </tr>
+            </table></center>
+            <br>
+            <input type="button" class="button" id="connectionButton" value="se connecter">
+			<input type="reset" class="button" value="Effacer le formulaire">
+        </form>
+    </body>
+</html>

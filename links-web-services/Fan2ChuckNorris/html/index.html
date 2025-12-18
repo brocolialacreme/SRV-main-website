@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Fan2Chuck Norris</title>
+  <link rel="stylesheet" href="../css/style-index.css">
+  <script type="text/javascript" src="../userJourney/java/changePage.js" async></script>
+</head>
+
+<body>
+  <header>
+    <!-- Lien vers la page utilisateur -->
+    <div id="userAccount">
+      <img src="../img/userIcon.png" width="50" height="50" alt="user icon">
+    </div>
+    <h1 id="title">Bienvenue sur le site Fan2Chuck Norris</h1>
+    <nav>
+      <a id="bio1">Page 1</a>
+      <a id="bio2">Page 2</a>
+    </nav>
+  </header>
+
+  <div class="background-section">
+    <!-- Début des info box-->
+    <!-- Box Paragraphe de bienvenue-->
+    <table>
+      <tr>
+        <td><div class="simple-paragraph" style="position: relative; top: 30px; margin-right: 100px;margin-left: 100px">
+          <p>
+            Bienvenue sur Fan2Chuck Norris, le site dédié à la légende vivante des arts martiaux et du cinéma d’action.  
+            Découvrez le parcours exceptionnel de Chuck Norris, de ses débuts dans l’armée de l’air américaine à son ascension en tant qu’icône mondiale du film d’action.  
+            Plongez dans son univers à travers des biographies, des anecdotes et des images rares.
+          </p>
+        </div></td>
+        <td><img id="imgWelcome" src="../img/cnorris1.png" width="300px" height="auto" style="margin-top:60px;border-radius:40px"></td>
+      </tr>
+    </table>
+
+
+
+    <div class="info-section">
+      <!-- Boite d'image-->
+      <div class="img-box">
+        <img src="../img/cnorris12.png" width="300px" height="300px">
+      </div>
+      <!-- Boite de texte-->
+      <div class="content-box">
+        <p>
+          Chuck Norris n’a pas besoin de présenter sa légende: elle le précède. Entre arts martiaux, scènes d’action et regards qui font reculer les méchants, il a marqué des générations.
+        </p>
+      </div>
+    </div>
+    
+    <div class="info-section">
+      <div class="img-box">
+        <img src="../img/cnorris10.png" width="300px" height="300px">
+      </div>
+      <div class="content-box">
+        <p>
+          Au cinéma comme dans la vraie vie, Chuck Norris incarne la force, la détermination, et parfois même l’impossible. Certains disent qu'il n’agit pas sur le monde… c’est le monde qui réagit à lui.
+        </p>
+      </div>
+    </div>
+    
+    <div class="info-section">
+      <div class="img-box">
+        <img src="../img/cnorris11.png" width="300px" height="300px">
+      </div>
+      <div class="content-box">
+        <p>
+          Installe-toi, découvre, amuse-toi. Tu trouveras ici anecdotes, images et clins d’œil à une icône éternelle. Parce que Chuck Norris… ça ne se raconte pas, ça se vit.
+        </p>
+      </div>
+    </div>
+
+    <div class="info-section">
+      <div class="content-box">
+        <!-- Bouton pour générer un Chuck Norris fact -->
+        <button id="generate-btn">Générer un Chuck Norris Fact</button>
+
+        <!-- Div où le texte aléatoire apparaîtra -->
+        <div id="chuck-text" class="simple-paragraph" style="margin-top: 20px;">
+          Cliquez sur le bouton pour découvrir un fait sur Chuck Norris !
+        </div>
+      </div>
+    </div>
+    <!-- Fin des infos box-->
+  </div>
+  <script src="../userJourney/java/cnorris-facts.js"></script>
+</body>
+</html>

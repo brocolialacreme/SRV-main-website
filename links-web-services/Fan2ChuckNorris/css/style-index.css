@@ -1,0 +1,111 @@
+/* Paramètre de la page de base */
+body {
+    margin: 0;
+    font-family: "Georgia", serif;
+    background-color: rgb(186, 186, 186);
+    color: #222;
+}
+
+/* BANDEAUX HAUT DE PAGE */
+header {
+    background-color: rgb(253, 231, 206);
+    text-align: center;
+    padding: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+    z-index: 10;
+    font-size: 23px;
+    font-family: "Georgia", serif;
+}
+
+/* Styliser les liens du menu (navigation avec les liens) */
+nav a {
+    margin: 0 10px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+    font-size: 40px;
+    color: rgb(216, 122, 34,);
+}
+
+/* Changer la couleur quand la souris est au dessus de la navigation de lien */
+nav a:hover {
+    color: rgb(180, 110, 50);
+}
+
+/* Positionnement de l’icône utilisateur dans le header */
+header img {
+    position: absolute;
+    right: 20px;
+    top: 20px;
+}
+
+/* FIN BANDEAUX HAUT DE PAGE */
+.background-section {
+    background-color: rgb(255, 255, 255);
+    padding-bottom: 200px; /* Ajoute de l'espace en bas */
+}
+
+/* Boîte de contenu avec texte */
+.content-box {
+    background-color: rgba(253, 231, 206);
+    border-left: 8px solid rgb(180, 110, 50); /* Bordure à gauche */
+    max-width: 800px;
+    padding: 20px 30px;
+    border-radius: 12px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Ombre */
+    text-align: justify; /* Bon alignement du texte */
+    line-height: 1.6; /* Espacement entre les lignes */
+    font-size: 20px;
+}
+
+/* Boîte prévue pour des images */
+.img-box {
+    background-color: rgba(253, 231, 206);
+    max-width: 400px;
+    padding: 15px 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    margin-bottom: 30px;
+    margin-top: 70px;
+}
+
+/* Boite principale pour les bulles d'infortmations */
+.info-section {
+    display: flex;
+    align-items: center;      /* Centre verticalement */
+    justify-content: center;  /* Centre horizontalement le bloc */
+    gap: 40px;                /* Espace entre image et texte */
+}
+
+.simple-paragraph {
+    background-color: rgba(253, 231, 206); /* Fond blanc semi-transparent */
+    max-width: 800px;
+    padding: 15px 30px;
+    border-radius: 12px; /* Coins arrondis */
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2); /* Ombre pour effet relief */
+    text-align: justify; /* Bon alignement du texte */
+    line-height: 1.6; /* Espacement entre les lignes */
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 20px;
+}
+
+#phrase-chuck {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 22px;
+    font-weight: bold;
+    font-style: italic;
+}
+
+button{
+    border-radius: 5px;
+    border-color: rgba(255, 255, 255, 0);
+    margin: 3px;
+}
+
+button:hover{
+    background-color: rgb(177, 177, 177);
+}

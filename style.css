@@ -1,0 +1,275 @@
+:root {
+    --bg-main: #050b1a;
+    --bg-card: rgba(10, 25, 60, 0.9);
+    --blue-neon: #3aa9ff;
+    --blue-soft: #1e90ff;
+    --text-main: #e6f1ff;
+    --text-muted: #8aa4d8;
+    --glow: 0 0 20px rgba(58, 169, 255, 0.6);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body {
+    background: radial-gradient(circle at top, #0b1a3a, var(--bg-main));
+    color: var(--text-main);
+    min-height: 100vh;
+}
+
+/* ===================== */
+/* ===== NAVBAR ======== */
+/* ===================== */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(5, 11, 26, 0.9);
+    backdrop-filter: blur(10px);
+    border-bottom: 1px solid rgba(58,169,255,0.2);
+    z-index: 100;
+}
+
+nav {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-weight: 800;
+    color: var(--blue-neon);
+    font-size: 1.2rem;
+    text-shadow: var(--glow);
+}
+
+.nav-links {
+    display: flex;
+}
+
+.nav-links a {
+    margin-left: 25px;
+    text-decoration: none;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: var(--blue-neon);
+}
+
+/* ===== Burger (mobile) ===== */
+.burger {
+    display: none;
+    font-size: 1.8rem;
+    color: var(--blue-neon);
+    cursor: pointer;
+}
+
+/* ===================== */
+/* ===== MAIN ========== */
+/* ===================== */
+main {
+    padding: 140px 20px 60px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    color: var(--blue-soft);
+    text-shadow: 0 0 15px rgba(30,144,255,0.8);
+}
+
+/* ===================== */
+/* === PROJECT MENU ==== */
+/* ===================== */
+.project {
+    background: var(--bg-card);
+    border-radius: 15px;
+    margin-bottom: 20px;
+    box-shadow: var(--glow);
+    overflow: hidden;
+}
+
+.project-header {
+    padding: 25px 30px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project-header h2 {
+    font-size: 1.2rem;
+    color: var(--blue-neon);
+}
+
+.project-header span {
+    font-size: 1.5rem;
+    transition: transform 0.3s;
+}
+
+.project-content {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    padding: 0 30px;
+}
+
+.project-content p {
+    color: var(--text-muted);
+    margin-bottom: 15px;
+    line-height: 1.6;
+}
+
+.project-content a {
+    display: inline-block;
+    margin-bottom: 25px;
+    color: var(--blue-soft);
+    text-decoration: none;
+}
+
+.project.open .project-content {
+    max-height: 400px;
+}
+
+.project.open .project-header span {
+    transform: rotate(180deg);
+}
+
+/* ===================== */
+/* ===== FOOTER ======== */
+/* ===================== */
+footer {
+    text-align: center;
+    padding: 30px;
+    font-size: 0.8rem;
+    color: rgba(138,164,216,0.5);
+}
+
+/* ===================== */
+/* === MOBILE STYLE ==== */
+/* ===================== */
+@media (max-width: 768px) {
+    nav {
+        padding: 15px 20px;
+    }
+
+    .burger {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        background: rgba(5, 11, 26, 0.97);
+        padding: 20px 0;
+        border-bottom: 1px solid rgba(58,169,255,0.2);
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links a {
+        margin: 12px 0;
+        text-align: center;
+        font-size: 1rem;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+        margin-bottom: 35px;
+    }
+
+    .project-header {
+        padding: 20px;
+    }
+
+    .project-header h2 {
+        font-size: 1rem;
+    }
+
+    .project-content {
+        padding: 0 20px;
+    }
+
+    .project {
+        border-radius: 12px;
+    }
+
+
+
+
+
+    #news-container {
+        max-width: 900px;
+        margin: 40px auto;
+        padding: 0 20px;
+    }
+
+    .news-item {
+        background: #111;
+        border: 1px solid #2a2a2a;
+        border-radius: 10px;
+        padding: 20px;
+        margin-bottom: 25px;
+        box-shadow: 0 0 10px rgba(0,255,255,0.1);
+    }
+
+    .news-item h2 {
+        color: #00ffff;
+        margin-bottom: 10px;
+    }
+
+    .news-meta {
+        font-size: 0.85em;
+        color: #aaa;
+        margin-bottom: 10px;
+    }
+        
+    /* Les actualités sont toujours ouvertes */
+    .news .project-content {
+        display: block !important;
+    }
+
+    /* On enlève le curseur "cliquable" sur les actus */
+    .news .project-header {
+        cursor: default;
+    }
+
+    /* ===================== */
+    /* ===== ACTUALITÉS ==== */
+    /* ===================== */
+
+    /* Contenu toujours ouvert */
+    .news .project-content {
+        max-height: none;
+    }
+
+    /* Pas de curseur cliquable */
+    .news .project-header {
+        cursor: default;
+    }
+
+    /* Optionnel : un peu plus d’espace */
+    .news .project-content p {
+        margin-bottom: 15px;
+    }
+
+
+}

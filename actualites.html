@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>PixelPerfect — Actualités</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Police futuriste -->
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800&display=swap" rel="stylesheet">
+
+    <link rel="icon" type="image/png" href="/assets/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/assets/favicon.svg" />
+    <link rel="shortcut icon" href="/assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="manifest" href="/assets/site.webmanifest" />
+</head>
+
+<body>
+
+<header>
+    <nav>
+        <div class="logo">⬢ PixelPerfect</div>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+
+        <div class="nav-links">
+            <a href="index.html">Accueil</a>
+            <a href="actualites.html">Actualités</a>
+            <a href="#">Projets</a>
+            <a href="#">Membres</a>
+            <a href="#">Chat en ligne</a>
+            <a href="#">Compte</a>
+        </div>
+    </nav>
+</header>
+
+<main>
+    <h1>Actualités</h1>
+    <div id="news-container"></div>
+</main>
+
+<footer>
+    © 2025 — PixelPerfect v1.0
+</footer>
+
+<script>
+/* ===============================
+   MENU BURGER MOBILE
+   =============================== */
+function toggleMenu() {
+    document.querySelector(".nav-links").classList.toggle("active");
+}
+</script>
+
+<!-- Script des actualités -->
+<script src="js/actu-show.js"></script>
+
+</body>
+</html>

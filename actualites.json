@@ -2,19 +2,25 @@
   {
     "titre": "Lancement de PixelPerfect",
     "date": "Jeudi 18 Décembre 2025",
-    "auteur": "PM",
+    "auteur": "Admin",
     "contenu": "Le site web PixelPerfect est lancé ! Nous allons créer plein de projets différents. Nous informerons des projets à venir qui s'annoncent incroyables !"
   },
   {
     "titre": "Création d'un serveur Minecraft",
     "date": "Samedi 20 Décembre 2025",
-    "auteur": "PM",
+    "auteur": "Admin",
     "contenu": "Nous avons mis en place un serveur Minecraft que vous pouvez rejoindre ! Depuis quelques jours, nous travaillons sur un serveur Minecraft survie pour jouer tous ensemble. Nous hébergeons nous-même notre serveur Minecraft sans passer par des tiers. Nous ouvrirons bientôt la survie alors suivez les actualités !"
   },
   {
     "titre": "Ouverture du serveur Minecraft !",
     "date": "Dimanche 21 Décembre 2025",
-    "auteur": "PM",
+    "auteur": "Admin",
     "contenu": "Nous avons terminé la création du serveur et il est désormais ouvert ! Vous pouvez nous rejoindre quand vous le souhaitez à l'adresse mc-survival756.duckdns.org:25565 ! Si vous souhaitez obtenir des permissions pour gérer avec nous le serveur contactez-nous !"
+  },
+  {
+    "titre": "Changement d'adresse pour l'administration des serveurs",
+    "date": "Mardi 23 Décembre 2025",
+    "auteur": "Admin",
+    "contenu": "Nous changeons l'adresse pour l'administration des serveurs de pufferpanel. L'adresse mc-admin756.duckdns.org sera bientôt obsolète. Vous retrouverez toujours la possibilité d'aller sur la plateforme via notre section 'outils' ou directement à l'adresse : pf-pannel.pixelperfect.duckdns.org\n De prochains changements d'adresse peuvent encoore survenir pour les autres services."
   }
 ]
